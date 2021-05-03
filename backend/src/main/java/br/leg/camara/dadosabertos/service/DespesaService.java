@@ -18,12 +18,12 @@ public class DespesaService {
         return despesaRepository.obterDespesasUltimosMeses(parlamentarId, paginacao);
     }
 
-    public List<Despesa> obterDetalhesDespesa(Long id) {
-        return despesaRepository.obterDetalhesDespesas(id);
+    public List<Despesa> obterDetalhesDespesa(Long parlamentarId) {
+
+        return despesaRepository.obterDetalhesDespesas(parlamentarId);
+
+
     }
-
-
-
 
 
 }
